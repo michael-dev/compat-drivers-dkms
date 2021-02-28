@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cd "$1"
+
+let i=0
+
+find . -name "*.ko" | while read module; do
+	cat <<EOF
+BUILT_MODULE_NAME[$i]="$(basename $module .ko)"
+BUILT_MODULE_LOCATION[$i]="$(dirname $module)"
+DEST_MODULE_LOCATION[$i]="/kernel/$(dirname $module)"
+EOF
+	let i++
+done

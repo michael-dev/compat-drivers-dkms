@@ -1,0 +1,6 @@
+compat-drivers-dkms (5.10.16-1) buster; urgency=medium
+
+  * Initial release. (Packaging https://backports.wiki.kernel.org/index.php/Documentation/compat-drivers)
+
+ -- Michael Braun <michael-dev@fami-braun.de>  Sun, 28 Feb 2021 09:07:56 +0100
+

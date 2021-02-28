@@ -1,0 +1,6 @@
+build
+debian/files
+debian/*.debhelper
+debian/*.substvars
+debian/*.log
+debian/compat-drivers-dkms/
